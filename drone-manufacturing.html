@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drone Manufacturing — Xsynva</title>
+<meta name="description" content="Xsynva Global's drone manufacturing program: purpose-built UAVs designed and assembled in-house, with industrial, agricultural and FPV airframes in development.">
+<link rel="canonical" href="https://xsynva.com/drone-manufacturing.html">
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/x-icon"             href="assets/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16"  href="assets/images/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32"  href="assets/images/favicons/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180"     href="assets/images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="152x152"     href="assets/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="120x120"     href="assets/images/favicons/apple-touch-icon-120x120.png">
+<meta name="msapplication-TileImage"             content="assets/images/favicons/android-chrome-192x192.png">
+<meta name="msapplication-TileColor"             content="#0A1428">
+<meta name="theme-color"                         content="#0A1428">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body class="page-drone-manufacturing">
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">      
+      <span class="brand-mark">
+        <!-- <img src="assets/images/optimized/logo_icon.png" alt="Xsynva" style="width:auto; height:44px;"> -->
+        <svg width="40" height="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <!--
+          Circuit-trace mark. Built on a strict 64px grid (512/8) so every turn
+          is a clean 90-degree corner — engineered, not freehand.
+          Single continuous trace, uniform stroke width, one terminal node (pad).
+          Container: rounded square, suggesting a chip/PCB footprint.
+          No rotational symmetry, no letterform, no radial blades.
+        -->
+
+        <!-- Container: rounded square, single flat color, acts as the chip/badge -->
+        <rect x="64" y="64" width="384" height="384" rx="72" fill="#0A1428"/>
+
+        <!-- Circuit trace: cut out in background color (here white) so it reads
+              as an etched path inside the badge. Starts bottom-left, turns twice,
+              ends top-right at a node. -->
+        <path d="M 160 352
+                  L 160 256
+                  L 256 256
+                  L 256 192
+                  L 352 192"
+              stroke="#FFFFFF"
+              stroke-width="28"
+              stroke-linecap="square"
+              fill="none"/>
+
+        <!-- Terminal node / pad -->
+        <circle cx="352" cy="192" r="26" fill="#FFFFFF"/>
+
+        <!-- Origin pad (small, grounded end) -->
+        <circle cx="160" cy="352" r="26" fill="#FFFFFF"/>
+        </svg>
+      </span>
+
+      <svg width="216" height="54" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+        <!--
+          Xsynva wordmark — dark filled, navy-on-light, render-verified.
+          Font: Chakra Petch Bold (must be loaded separately — see note below).
+          Custom edit: a flat right-angle notch is cut into the X's crossing
+          point, echoing the icon's two 90-degree circuit turns. This is the
+          single deliberate link between icon and wordmark.
+        -->
+        <text x="0" y="56"
+              font-family="'Chakra Petch', sans-serif"
+              font-weight="700"
+              font-size="52"
+              letter-spacing="-0.5"
+              fill="#0A1428">Xsynva</text>
+
+        <g transform="translate(172,10) scale(0.24) rotate(-50 24 35)">
+          <path d="M 0 -30 L -20 -2 L 0 -2 Z" fill="#0A1428"/>
+          <path d="M 0 -30 L 20 -2 L 0 -2 Z" fill="#6E9CFF"/>
+          <path d="M -20 -2 C -24 14, -14 28, 0 32 L 0 -2 Z" fill="#0A1428"/>
+          <path d="M 20 -2 C 24 14, 14 28, 0 32 L 0 -2 Z" fill="#6E9CFF"/>
+          <path d="M -13 4 C -6 14, -2 24, 0 32" stroke="#FFFFFF" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+        </g>
+
+        <!-- Notch: cuts the X's crossing point in background color -->
+        <path d="M 17 33 L 17 44 L 28 44 L 28 33 Z" fill="#FFFFFF"/>
+      </svg>
+
+      
+
+      <!-- <span class="brand-text">Xsynva<small><span class="brand-tagline">Innovation That Matters</small></span> -->
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <div class="nav-item">
+        <a href="finance.html" class="nav-link">Finance <svg viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="mega" style="width:380px;">
+          <div class="mega-col">
+            <h4>Finance</h4>
+            <div class="mega-list">
+              <a href="finance-advisory.html">Domestic Taxation</a>
+              <a href="international-taxation.html">International Taxation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="technology.html" class="nav-link active">Technology <svg viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="mega">
+          <div class="mega-col">
+            <h4>Drone Manufacturing</h4>
+            <div class="mega-list">
+              <a href="drone-manufacturing.html">Drone Programs</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <h4>Software Solutions</h4>
+            <div class="mega-list">
+              <a href="software-solutions.html#fleet-platform">Drone Fleet Management</a>
+              <a href="software-solutions.html#xdairy">XDairy Procurement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <a href="agriculture.html" class="nav-link">Agriculture <svg viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <div class="mega">
+          <div class="mega-col">
+            <h4>Dairy Farm &amp; Research</h4>
+            <div class="mega-list">
+              <a href="agriculture.html#facilities">Modern Dairy Plant</a>
+              <a href="agriculture.html#govt-programs">Government Programs</a>
+            </div>
+          </div>
+          <div class="mega-col">
+            <h4>Farm Technology</h4>
+            <div class="mega-list">
+              <a href="agri-technology.html#precision-farming">Precision Farming</a>
+              <a href="agri-technology.html#xdairy">XDairy Procurement</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <div class="nav-cta-group">
+      <a href="contact.html" class="btn btn-secondary nav-cta">Get in Touch</a>
+      <button class="nav-menu-btn" aria-label="Open menu" id="mobileMenuBtn">
+        <svg viewBox="0 0 18 18" fill="none"><path d="M2 4.5H16M2 9H16M2 13.5H16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mdrawer" id="mobileDrawer">
+  <div class="mdrawer-head">
+    <span class="brand-text">Xsynva<small><span class="brand-tagline">Innovation That Matters</small></span>
+    <button id="mobileCloseBtn" aria-label="Close menu" class="nav-menu-btn">
+      <svg viewBox="0 0 18 18" fill="none"><path d="M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav class="mdrawer-links">
+    <a href="finance.html">Finance</a>
+    <a href="technology.html">Technology</a>
+    <a href="agriculture.html">Dairy Farm &amp; Research</a>
+    <a href="agri-technology.html">Farm Technology</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="contact.html" class="btn btn-secondary nav-cta">Get in Touch</a>
+</div>
+<div class="mdrawer-backdrop" id="mdrawerBackdrop"></div>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap page-hero-inner">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><a href="technology.html">Technology</a><span>/</span><span>Drone Manufacturing</span></div>
+    <span class="eyebrow on-dark">Drone Manufacturing — Planning Stage</span>
+    <h1>Purpose-built drones, designed and assembled in-house.</h1>
+    <p class="lead">Every airframe in this program is engineered alongside the software that will fly it — for operators who need their UAVs to work daily, not occasionally. We're upfront about where each program stands: planning and early design, not an active production line yet.</p>
+    <div class="page-hero-meta">
+      <span class="phm"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg> Industrial &amp; FPV systems in development</span>
+      <span class="phm"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="M12 2V5M12 19V22M2 12H5M19 12H22" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Four programs in planning</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     IMAGE SHOWCASE
+════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="drone-showcase">
+      <div class="drone-showcase-img">
+        <img src="assets/images/optimized/drone-water.jpg" alt="UAV in flight over open water">
+        <div class="ds-caption"><span>UAV &amp; SURVEILLANCE CATEGORY</span></div>
+        <span class="ds-label">In Flight</span>
+      </div>
+      <div class="drone-showcase-img">
+        <img src="assets/images/optimized/drone-agri.jpg" alt="Agricultural drone flying over a wheat field">
+        <div class="ds-caption"><span>AGRI DRONE FOCUS</span></div>
+        <span class="ds-label">Agriculture</span>
+      </div>
+      <div class="drone-showcase-img">
+        <img src="assets/images/optimized/drone-circuit.JPG" alt="Drone electronics components on a workbench">
+        <div class="ds-caption"><span>WE MANUFACTURE &amp; ASSEMBLE</span></div>
+        <span class="ds-label">Electronics</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════
+         ENGINEERING & HARDWARE — hero-level, light split
+    ════════════════════════════════════════════════ -->
+    <div class="eng-hero">
+      <div class="eng-hero-split">
+        <img src="assets/images/optimized/drone-frame.jpg" alt="Quadcopter drone engineering blueprint">
+        <div class="eng-hero-copy">
+          <span class="eyebrow eh-eyebrow">Our Core Philosophy</span>
+          <h2>Built from first principles — hardware and software by the same team.</h2>
+          <p>We don't design an airframe and hand it off to a separate software team to figure out later. Every frame, motor configuration and sensor placement is specified alongside the fleet management platform that will monitor and control it — so the hardware is built for the data it needs to produce, not retrofitted to match it afterward.</p>
+          <div class="eng-points">
+            <div class="eng-point">
+              <span class="ep-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="7" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 7V5.5C8 4.67 8.67 4 9.5 4H14.5C15.33 4 16 4.67 16 5.5V7" stroke="currentColor" stroke-width="1.7"/></svg></span>
+              <div><strong>Embedded systems</strong><span>Flight controllers and telemetry built to feed our own software stack directly.</span></div>
+            </div>
+            <div class="eng-point">
+              <span class="ep-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L20 6V12C20 17 16.5 20.5 12 22C7.5 20.5 4 17 4 12V6L12 2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <div><strong>Frame engineering</strong><span>Airframes shaped by payload and mission profile, not adapted from a generic chassis.</span></div>
+            </div>
+            <div class="eng-point">
+              <span class="ep-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+              <div><strong>Hardware–software co-design</strong><span>The same team specs the sensor and writes the code that reads it — no handoff gap.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     UNDER DEVELOPMENT + PLANNED PROGRAMS
+════════════════════════════════════════════════ -->
+<section class="section section--tint" id="drones">
+  <div class="wrap">
+
+    <div class="programs-row">
+      <h3>Under Development <span class="tag tag--core">In Progress</span></h3>
+      <div class="program-grid dev">
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="7" width="16" height="11" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 7V5.5C8 4.67 8.67 4 9.5 4H14.5C15.33 4 16 4.67 16 5.5V7" stroke="currentColor" stroke-width="1.7"/></svg></span>
+            <span class="tag tag--core">In Development</span>
+          </div>
+          <h4>Industrial UAV Systems</h4>
+          <p>Heavier-payload platforms for inspection, logistics support and monitoring across plants, warehouses and infrastructure sites.</p>
+          <div class="pc-apps">INSPECTION · INDUSTRIAL MONITORING</div>
+        </div>
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <span class="tag tag--core">In Development</span>
+          </div>
+          <h4>FPV Drones</h4>
+          <p>Fast, agile platforms for close-range inspection and dynamic filming in spaces fixed-camera drones can't reach.</p>
+          <div class="pc-apps">INSPECTION · DYNAMIC OPERATIONS</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="programs-row">
+      <h3>Planned Programs <span class="tag tag--soon">In Planning</span></h3>
+      <div class="program-grid planned">
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L12 14M12 14L8 10M12 14L16 10M5 18H19" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="tag tag--soon">Planned</span>
+          </div>
+          <h4>Agriculture Spraying Drones</h4>
+          <p>Multirotor sprayers built for repeated daily cycles across uneven farmland — fast to refill, simple to maintain.</p>
+          <div class="pc-apps">CROP PROTECTION · NUTRIENT SPRAY</div>
+        </div>
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17L9 11L13 15L21 7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="7" r="1.6" fill="currentColor"/></svg></span>
+            <span class="tag tag--soon">Planned</span>
+          </div>
+          <h4>Survey &amp; Mapping Drones</h4>
+          <p>Fixed-wing and multirotor UAVs delivering survey-grade imagery for land records, planning and construction.</p>
+          <div class="pc-apps">GIS · TOPOGRAPHIC SURVEY</div>
+        </div>
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 2V5M12 19V22M2 12H5M19 12H22M4.9 4.9L7 7M17 17L19.1 19.1M19.1 4.9L17 7M7 17L4.9 19.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <span class="tag tag--soon">Planned</span>
+          </div>
+          <h4>Solar-Powered Drones</h4>
+          <p>Extended-endurance airframes for long-duration monitoring missions without frequent battery swaps.</p>
+          <div class="pc-apps">ENDURANCE · REMOTE MONITORING</div>
+        </div>
+        <div class="program-card">
+          <div class="pc-top">
+            <span class="pc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20V8M12 8L9 11M12 8L15 11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="4" r="2" stroke="currentColor" stroke-width="1.7"/></svg></span>
+            <span class="tag tag--soon">Planned</span>
+          </div>
+          <h4>Tethered Drone Systems</h4>
+          <p>Ground-powered platforms for continuous, uninterrupted aerial monitoring of a fixed site or perimeter.</p>
+          <div class="pc-apps">SURVEILLANCE · PERIMETER</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Future Vision -->
+    <div class="programs-row" id="future-vision">
+      <h3>Future Vision <span class="tag tag--ai">Long-Term</span></h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.4rem;">
+        <div class="program-card" style="border-color: var(--gold); background: var(--gold-pale);">
+          <div class="pc-top">
+            <span class="pc-icon" style="background: var(--gold-pale);"><svg viewBox="0 0 24 24" fill="none"><rect x="5" y="14" width="14" height="6" rx="1.2" stroke="currentColor" stroke-width="1.7"/><path d="M12 14V6M9 9L12 6L15 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="tag tag--ai">Future Vision</span>
+          </div>
+          <h4>Autonomous Docking Systems</h4>
+          <p>Self-charging docking stations that let fleets fly, land, recharge and relaunch without a ground crew present — enabling truly autonomous operations.</p>
+          <div class="pc-apps" style="color: var(--gold-deep);">AUTONOMOUS OPS · SELF-RECHARGING</div>
+        </div>
+        <div class="vision-strip" style="margin-top: 0; border-radius: var(--radius);">
+          <div>
+            <span class="eyebrow" style="color:#7FB0FF;">Future Vision</span>
+            <h3 style="margin-top:0.7rem; font-size: 1.15rem;">Solar energy infrastructure, alongside the fleet.</h3>
+            <p style="margin-top: 0.5rem;">As our solar-powered and docking programs mature, Xsynva is extending into solar energy infrastructure — keeping distributed drone operations powered independently of grid access.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     CTA STRIP
+════════════════════════════════════════════════ -->
+<section class="section">
+  <div class="wrap">
+    <div class="team-note" style="background: var(--paper-deep); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 2.2rem; text-align: center;">
+      <span class="eyebrow">Talk to Us</span>
+      <h2 style="margin-top:0.8rem; font-size:1.5rem;">Interested in a partnership or pilot?</h2>
+      <p style="color: var(--steel); max-width: 540px; margin: 0.8rem auto 0;">Whether you're exploring an industrial UAV use case or want early access to a future program, tell us what you're building toward.</p>
+      <div style="margin-top:1.5rem;">
+        <a href="https://wa.me/919270227724" class="btn btn-primary" target="_blank" rel="noopener">Talk to Our Team on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span>
+          <a href="index.html" class="brand brand-footer">
+            <span class="brand-mark">
+              <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <rect x="64" y="64" width="384" height="384" rx="72" fill="#FFFFFF"/>
+                <path d="M 160 352 L 160 256 L 256 256 L 256 192 L 352 192" stroke="#0A1428" stroke-width="28" stroke-linecap="square" fill="none"/>
+                <circle cx="352" cy="192" r="26" fill="#0A1428"/>
+                <circle cx="160" cy="352" r="26" fill="#0A1428"/>
+              </svg>
+            </span>
+
+            <svg width="170" height="40" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+              <text x="0" y="56" font-family="'Chakra Petch', sans-serif" font-weight="700" font-size="52" letter-spacing="-0.5" fill="#FFFFFF">Xsynva</text>
+              <g transform="translate(172,10) scale(0.24) rotate(-50 24 35)">
+                <path d="M 0 -30 L -20 -2 L 0 -2 Z" fill="#FFFFFF"/>
+                <path d="M 0 -30 L 20 -2 L 0 -2 Z" fill="#6E9CFF"/>
+                <path d="M -20 -2 C -24 14, -14 28, 0 32 L 0 -2 Z" fill="#FFFFFF"/>
+                <path d="M 20 -2 C 24 14, 14 28, 0 32 L 0 -2 Z" fill="#6E9CFF"/>
+                <path d="M -13 4 C -6 14, -2 24, 0 32" stroke="#FFFFFF" stroke-width="4.2" fill="none" stroke-linecap="round"/>
+              </g>
+              <path d="M 17 33 L 17 44 L 28 44 L 28 33 Z" fill="#0A1428"/>
+            </svg>
+          </a>
+
+          <small class="brand-tagline">Innovation That Matters</small>
+        </span>
+        <p>Finance, Technology and Agriculture — built by one team, with one standard of work.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Finance</h5>
+        <a href="finance-advisory.html">Domestic Taxation</a>
+        <a href="finance-advisory.html#consulting">Business Consulting</a>
+        <a href="international-taxation.html">International Taxation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Technology</h5>
+        <a href="software-solutions.html#fleet-platform">Drone Fleet Platform</a>
+        <a href="software-solutions.html#xdairy">XDairy Procurement</a>
+        <a href="drone-manufacturing.html">Drone Manufacturing</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="about.html">About Us</a>
+        <a href="agriculture.html">Agriculture</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Xsynva Global. All rights reserved.</span>
+      <div class="fb-links">
+        <a href="contact.html">Privacy Policy</a>
+        <a href="contact.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-stack">
+  <a href="https://wa.me/919270227724" class="float-btn whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12C2 13.85 2.5 15.58 3.38 17.07L2 22L7.05 20.66C8.5 21.5 10.19 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20.2C10.4 20.2 8.9 19.75 7.62 18.95L7.3 18.76L4.65 19.46L5.37 16.9L5.16 16.56C4.28 15.22 3.8 13.65 3.8 12C3.8 7.47 7.47 3.8 12 3.8C16.53 3.8 20.2 7.47 20.2 12C20.2 16.53 16.53 20.2 12 20.2ZM16.4 13.9C16.15 13.78 14.95 13.19 14.72 13.11C14.49 13.02 14.33 12.98 14.16 13.23C14 13.48 13.53 14.04 13.38 14.21C13.24 14.37 13.1 14.39 12.86 14.27C11.32 13.55 10.3 12.86 9.27 11.13C9.19 10.99 9.32 10.85 9.45 10.7C9.57 10.56 9.7 10.4 9.82 10.25C9.94 10.1 9.98 9.99 10.06 9.82C10.14 9.65 10.1 9.51 10.02 9.36C9.94 9.21 9.5 8.04 9.31 7.59C9.13 7.16 8.95 7.22 8.81 7.21C8.68 7.21 8.51 7.21 8.34 7.21C8.18 7.21 7.91 7.27 7.68 7.52C7.45 7.77 6.8 8.38 6.8 9.55C6.8 10.71 7.7 11.85 7.82 12C7.95 12.15 9.5 14.65 11.95 15.65C14.18 16.56 14.18 16.27 14.6 16.23C15.02 16.19 15.99 15.65 16.21 15.07C16.43 14.49 16.43 14 16.36 13.9C16.31 13.81 16.4 13.9 16.4 13.9Z"/></svg>
+  </a>
+  <a href="#" id="chatLauncher" class="float-btn chat" aria-label="Open chat assistant">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5C21 16.19 16.97 20 12 20C10.84 20 9.74 19.81 8.73 19.46L3 21L4.62 16.07C3.6 14.84 3 13.24 3 11.5C3 6.81 7.03 3 12 3C16.97 3 21 6.81 21 11.5Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

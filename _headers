@@ -1,0 +1,13 @@
+# Cloudflare Pages reads this file automatically and applies these
+# headers to every response. GitHub Pages ignores this file entirely
+# (it has no equivalent mechanism) — harmless to keep it in the repo
+# either way, it just only takes effect on Cloudflare Pages.
+#
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com; frame-src https://maps.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://script.google.com https://wa.me

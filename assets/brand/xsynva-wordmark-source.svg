@@ -1,0 +1,18 @@
+<svg width="340" height="80" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Xsynva wordmark — dark filled, navy-on-light, render-verified.
+    Font: Chakra Petch Bold (must be loaded separately — see note below).
+    Custom edit: a flat right-angle notch is cut into the X's crossing
+    point, echoing the icon's two 90-degree circuit turns. This is the
+    single deliberate link between icon and wordmark.
+  -->
+  <text x="0" y="56"
+        font-family="'Chakra Petch', sans-serif"
+        font-weight="700"
+        font-size="54"
+        letter-spacing="-0.5"
+        fill="#0A1428">Xsynva</text>
+
+  <!-- Notch: cuts the X's crossing point in background color -->
+  <path d="M 17 30 L 17 41 L 28 41 L 28 30 Z" fill="#FFFFFF"/>
+</svg>

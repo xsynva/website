@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local static-server logs, if you use one for testing
+npm-debug.log*
+
+# Local env files (not currently used by this static site, but
+# reserved in case you ever add a build/config step)
+.env
+.env.local
+.history/*
