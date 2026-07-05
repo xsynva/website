@@ -246,20 +246,7 @@ h1, h2, h3, h4 {
 /* ============================================================
    PAGE HERO (sub-pages)
    ============================================================ */
-/* .page-hero {
-  padding: 150px 0 4rem;
-  background: var(--navy);
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-}
-.page-hero::before {
-  content: '';
-  position: absolute; inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.07) 1px, transparent 0);
-  background-size: 26px 26px;
-  opacity: 0.5;
-} */
+
  .page-hero {
   padding: 150px 0 4rem;
   background: var(--navy) url('../images/optimized/binary.jpg') center/cover no-repeat;
@@ -267,10 +254,12 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
 }
+
+/* Binary background opacity on all pages except index page */
 .page-hero::before {
   content: '';
   position: absolute; inset: 0;
-  background: rgba(2, 9, 22, 0.84);
+  background: rgba(2, 9, 22, 0.44);
 }
 .page-hero-inner { position: relative; max-width: 720px; }
 .page-hero h1 { color: #fff; font-size: clamp(2.1rem, 4vw, 3rem); margin-top: 0.9rem; }
@@ -318,9 +307,13 @@ h1, h2, h3, h4 {
 /* ============================================================
    FOOTER
    ============================================================ */
+/* Space between AI section and footer */
+
+.footer-gap{ height:5rem;}
+@media (max-width:768px){.footer-gap{ height:3rem;}}
 .footer { background: var(--navy); color: #8997A3; padding: 3.5rem 0 2rem; }
 .footer-grid {
-  display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 2.4rem;
+  display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr; gap: 2.4rem;
   padding-bottom: 2.6rem; border-bottom: 1px solid var(--navy-line);
 }
 .footer-brand .brand-text { color: #fff; }
@@ -336,7 +329,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
   color: #5B6B7A; font-weight: 500; margin-bottom: 1rem;
 }
-.footer-col a { display: block; font-size: 0.88rem; color: #C9D3E0; text-decoration: none; margin-bottom: 0.65rem; }
+.footer-col a { display: block; font-size: 0.84rem; color: #C9D3E0; text-decoration: none; margin-bottom: 0.65rem; }
 .footer-col a:hover { color: #fff; }
 .footer-bottom {
   display: flex; justify-content: space-between; align-items: center;

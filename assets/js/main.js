@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Current year
+  document.getElementById('current_year').textContent = new Date().getFullYear();
+
   // Mobile drawer
   const mDrawer = document.getElementById('mobileDrawer');
   const mBackdrop = document.getElementById('mdrawerBackdrop');

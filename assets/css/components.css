@@ -101,6 +101,36 @@ a.vchip:hover { border-color: var(--signal); color: var(--signal-deep); backgrou
 @media (max-width: 600px) { .cta-banner { padding: 2.2rem 1.5rem; } }
 
 /* ============================================================
+   PER-VERTICAL HERO BRIGHTNESS
+   .page-hero::before defaults to rgba(2,9,22,0.44) in base.css —
+   the "brighter" treatment, kept as-is for Technology/Drone
+   Manufacturing (R&D-forward verticals suit the more energetic,
+   visible-circuit look). Trust/credibility verticals (Finance,
+   International Taxation, Agriculture) and the general About page
+   get a dimmer overlay instead — calmer, closer to (but not as
+   flat as) the homepage's 0.84. Contact/404 are left at the
+   default; they're utility pages, not a vertical to brand.
+
+   To change which pages are "dim" vs "bright," just add or remove
+   a body.page-* line below — no HTML edits needed.
+   ============================================================ */
+body.page-404 .page-hero::before,
+body.page-contact .page-hero::before,
+body.page-finance .page-hero::before,
+body.page-finance-advisory .page-hero::before,
+body.page-international-taxation .page-hero::before,
+body.page-agriculture .page-hero::before,
+body.page-agri-technology .page-hero::before,
+body.page-technology .page-hero::before,
+body.page-drone-manufacturing .page-hero::before,
+body.page-software-solutions .page-hero::before,
+body.page-privacy-policy .page-hero::before,
+body.page-terms-of-service .page-hero::before,
+body.page-about .page-hero::before {
+  background: rgba(2, 9, 22, 0.72);
+}
+
+/* ============================================================
    ABOUT.HTML — page-specific styles
    ============================================================ */
 .about-grid { display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 3.5rem; align-items: start; }
